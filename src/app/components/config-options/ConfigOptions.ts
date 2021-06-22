@@ -16,6 +16,5 @@ export enum FridgeType {
 export enum FridgeSizes {
   _30By36 = "_30By36",
   _23By36 = "_23By36"
-
 }
 
