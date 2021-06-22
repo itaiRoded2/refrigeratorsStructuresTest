@@ -18,11 +18,11 @@ export class Fridge {
 
     let foodLocation: string;
 
-    if (foodItem == "milk") {
+    if (foodItem.toLowerCase() == "milk") {
 
       foodLocation = this.findMilkInOurAvailableConfigurations();
 
-    } else if (foodItem == "gouda") {
+    } else if (foodItem.toLowerCase() == "gouda") {
 
       foodLocation = this.findGoudaInOurAvailableConfigurations();
 
@@ -38,14 +38,14 @@ export class Fridge {
     //check layout
     if (this.layout == FridgeType.SideBySide || this.layout == FridgeType.FrenchDoor) {
 
-      retVal = "right door, "
+      retVal = "left door, "
 
     } else if (this.layout == FridgeType.TopFreezer || this.layout == FridgeType.BottomFreezer) {
 
         retVal = "main door, "
     }
 
-    //checkNumberOfShelves - the milk is usually in the middle
+    //checkNumberOfShelves - the cheese is usually in the middle
     if (this.numberOfShelves > 0) {
 
       let middleShelfWholeNum: number = parseInt(this.numberOfShelves.toString());

@@ -14,10 +14,13 @@ export class ConfigOptionsComponent implements OnInit {
   ngOnInit(): void {
 
     let sampleFridge = this.createFridge()
-    debugger;
     let whereIsTheMilk = sampleFridge.findMyFood("milk");
+    debugger;
+    let whereIsTheGouda = sampleFridge.findMyFood("Gouda");
+
 
     alert("where Is The Milk for our sample fridge (see code): " + whereIsTheMilk);
+    alert("where Is The Gouda for our sample fridge (see code): " + whereIsTheGouda);
 
   }
 
