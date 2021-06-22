@@ -31,7 +31,7 @@ export class ConfigOptionsComponent implements OnInit {
 
     //alert("where Is The Milk for our sample fridge (see code): " + whereIsTheMilk2);
     //alert("where Is The Gouda for our sample fridge (see code): " + whereIsTheGouda2);
-     alert("where are The veggies for our sample fridge (see code): " + whereAreTheVeggies2);
+     //alert("where are The veggies for our sample fridge (see code): " + whereAreTheVeggies2);
 
   }
 

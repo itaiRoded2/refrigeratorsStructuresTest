@@ -1,6 +1,14 @@
 <pre>
-  This structure here is scalable and we add add modify to fit our old, current and future fridges
+  This structure here is scalable and we add add modify to fit our old, current and future fridges.
 </pre>
+
+<b>In our code we demo creating 2 different types of fridges (we can of course create as many we need for testing)
+  For each we call findMyFood on 3 different items: milk, gouda, veggies</b>
+
+  <br/>
+
+<b>We will notice the same call, to find the same item will return (as expected) different results based on the fridge
+  configuration</b>
 
 <pre>
 
@@ -10,14 +18,11 @@
     numberOfShelves: number;
     numberOfDrawers: number;
 
-
   FridgeType
     BottomFreezer = "BottomFreezer",
     TopFreezer = "TopFreezer",
     FrenchDoor = "FrenchDoor",
     SideBySide = "SideBySide"
-
-
 
   FridgeSizes
     _30By36 = "_30By36",
