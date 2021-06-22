@@ -15,12 +15,15 @@ export class ConfigOptionsComponent implements OnInit {
 
     let sampleFridge = this.createFridge()
     let whereIsTheMilk = sampleFridge.findMyFood("milk");
-    debugger;
     let whereIsTheGouda = sampleFridge.findMyFood("Gouda");
 
+    debugger;
+    let whereAreTheVeggies = sampleFridge.findMyFood("veggies");
 
-    alert("where Is The Milk for our sample fridge (see code): " + whereIsTheMilk);
-    alert("where Is The Gouda for our sample fridge (see code): " + whereIsTheGouda);
+
+    //alert("where Is The Milk for our sample fridge (see code): " + whereIsTheMilk);
+    //alert("where Is The Gouda for our sample fridge (see code): " + whereIsTheGouda);
+    alert("where are The veggies for our sample fridge (see code): " + whereAreTheVeggies);
 
   }
 

@@ -26,9 +26,39 @@ export class Fridge {
 
       foodLocation = this.findGoudaInOurAvailableConfigurations();
 
+    } else if (foodItem.toLowerCase() == "veggies") {
+
+      foodLocation = this.findVeggiesInOurAvailableConfigurations();
+
     }
 
     return foodLocation;
+  }
+
+  findVeggiesInOurAvailableConfigurations(): string {
+
+    let retVal: string;
+
+    //check layout
+    if (this.layout == FridgeType.SideBySide || this.layout == FridgeType.FrenchDoor) {
+
+      retVal = "The door that hides the drawers, "
+
+    } else if (this.layout == FridgeType.TopFreezer || this.layout == FridgeType.BottomFreezer) {
+
+        retVal = "main door, "
+    }
+
+    //numberOfDrawers - the veggies are usually in the bottom
+    if (this.numberOfDrawers > 0) {
+
+      let bottomDrawer: number = 1; //as long as there are a drawers
+
+      retVal = retVal +  "bottom drawer"
+
+    }
+    return retVal;
+
   }
 
   findGoudaInOurAvailableConfigurations() {
