@@ -5,8 +5,8 @@ import { TheTaskComponent } from './components/the-task/the-task.component';
 
 const routes: Routes = [
 
-  { path: '', component: TheTaskComponent, runGuardsAndResolvers: "always" },
-  { path: 'configurations', component: ConfigOptionsComponent, runGuardsAndResolvers: "always" },
+  { path: '', component: TheTaskComponent },
+  { path: 'configurations', component: ConfigOptionsComponent },
 
 ];
 
