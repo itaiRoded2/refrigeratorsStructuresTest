@@ -10,23 +10,17 @@
 <b>We will notice the same call, to find the same item will return (as expected) different results based on the fridge
   configuration</b>
 
-<pre>
-
-   Fridge
-    Layout: FridgeType;
-    Size: FridgeSizes;
-    numberOfShelves: number;
-    numberOfDrawers: number;
-
-  FridgeType
-    BottomFreezer = "BottomFreezer",
-    TopFreezer = "TopFreezer",
-    FrenchDoor = "FrenchDoor",
-    SideBySide = "SideBySide"
-
-  FridgeSizes
-    _30By36 = "_30By36",
-    _23By36 = "_23By36"
-
-
-</pre>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>Fridge 1(SideBySide/30 By 36/ 2 3)</h2>
+      <p (click)="findMilkFridge1()">Click to find Milk</p>
+      <p (click)="findGouda1()">Click to find Gouda</p>
+      <p (click)="findVeggies1()">Click to find Veggies</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Fridge 2 (Top freezer/30 By 36/ 2 3)</h2>
+      <p (click)="findMilkFridge2()">Click to find Milk</p>
+      <p (click)="findGouda2()">Click to find Gouda</p>
+      <p (click)="findVeggies2()">Click to find Veggies</p>
+    </div>
+  </div>
